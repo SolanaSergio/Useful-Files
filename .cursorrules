@@ -1,0 +1,109 @@
+# Development Standards and Rules
+
+## Code Quality and Implementation
+
+- ALWAYS write production-ready TypeScript with full type safety
+- ALWAYS implement comprehensive error handling
+- NEVER leave methods unimplemented or with placeholder code
+- NEVER remove functionality without proper replacement
+- ALWAYS maintain consistent code style and best practices
+- ALWAYS test changes thoroughly before committing
+- ALWAYS keep UI/UX consistent when fixing issues
+
+## Documentation Requirements
+
+- ALWAYS use project_description.md as the source of truth
+- NEVER reorganize or remove existing sections in project_description.md
+- ALWAYS document:
+  - Code changes (bugs, features, structure)
+  - Breaking changes before implementation
+  - Implementation blockers
+  - Dependency modifications
+  - Build status changes
+  - Type system changes and their impact
+  - Required environment variables
+  - Error tracking with severity levels
+  - Progress tracking (✓ for completed items)
+
+## Project Structure
+
+- ALWAYS maintain the following documentation structure:
+  1. Overview
+  2. Core Features
+  3. Technical Architecture
+  4. Development Status
+  5. Environment Configuration
+  6. Build & Deployment
+  7. Quality Assurance
+  8. Future Roadmap
+  9. Error Tracking
+
+## Development Process
+
+- ALWAYS scan codebase before making changes
+- ALWAYS create a detailed plan before implementation
+- ALWAYS update existing files instead of creating new ones
+- ALWAYS preserve existing functionality when fixing issues
+- ALWAYS document implementation dependencies
+- NEVER proceed without proper error handling
+- NEVER remove code without documented replacement
+- NEVER commit sensitive data to version control
+
+## Security and API Keys
+
+- NEVER expose sensitive credentials in code:
+  - No hardcoded API keys
+  - No placeholder API keys
+  - No example API keys
+  - No commented-out API keys
+
+## Environment Configuration
+
+- ALWAYS use environment variables for sensitive data
+- ALWAYS validate environment variables at startup
+- NEVER use fallback values for sensitive data
+- NEVER proceed with invalid/missing keys
+
+## Error Management
+
+- ALWAYS provide clear error messages
+- ALWAYS document errors with:
+  - Error messages
+  - Locations
+  - Status
+  - Root causes
+  - Dependencies
+  - Solutions
+
+## Type System
+
+- ALWAYS create and maintain project-specific types
+- ALWAYS ensure proper type imports/exports
+- NEVER remove type safety when fixing issues
+- ALWAYS document type system changes
+
+## Markdown Formatting
+
+- ALWAYS follow markdownlint rules:
+  - Surround headings with blank lines
+  - Surround lists with blank lines
+  - Use consistent spacing (2 spaces for indentation)
+  - No trailing spaces
+- ALWAYS use .markdownlint.json for configuration
+
+## Markdownlint Configuration
+
+```json
+{
+  "MD009": false,
+  "MD022": false,
+  "MD032": false,
+  "MD024": false,
+  "MD041": false,
+  "line-length": false,
+  "no-duplicate-header": false,
+  "no-trailing-spaces": false,
+  "no-multiple-blanks": false,
+  "first-header-h1": false
+}
+```
